@@ -1,0 +1,50 @@
+.code-background {
+    background-color: #EDEDED;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: start;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    overflow-x: auto;
+}
+
+.top-margin-sm {
+    margin-top: 20px
+}
+
+.bottom-margin-sm {
+    margin-bottom: 20px
+}
+
+h1 h3{
+    font-weight: 600;
+}
+
+.sub-heading {
+    font-size: 28px;
+}
+
+.align-left {
+    text-align: start;
+}
+
+@media only screen and (min-width: 800px){
+    .banner-text {
+        margin-top: 100px;
+    }    
+}
+
+@media only screen and (min-width: 600px) and(max-width: 799px){
+    .banner-text {
+        margin-top: 50px;
+    }    
+}
+
+@media not screen and (min-width: 600px){
+    .banner-text {
+        margin-top: 10px;
+    }    
+}
