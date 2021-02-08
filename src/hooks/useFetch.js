@@ -6,10 +6,16 @@ export default function useFetch({input}) {
     let containsFullStop = input.indexOf(".");
     const [dataFetched, setDataFetched] = useState({});
 
+    const instance = axios.create({
+      baseURL: 'http://api.url-previewer.com',
+      timeout: 1000,
+      headers: {'Content-Type': 'application/json'}
+    });
+
     useEffect(() => {
     
         const fetchData = async() => {
-          let results = await axios.get(`http://api.url-previewer.com?q=${input}`);
+          let results = await instance.get(`/?q=${input}`);
           // let results = await axios.get(`http://localhost:4001?q=${input}`);
           let status = results.status;
     

@@ -33,7 +33,7 @@ export default function Home() {
       <Menu theme="light" mode="horizontal" defaultSelectedKeys={['2']}>
       <Menu.Item key="1">
       <div className="logo" > 
-      <img src={Logo} style={{height: "50px", width: "180px"}} />
+      <img src={Logo} style={{height: "50px", width: "180px"}} alt="Url Previewer logo"/>
       </div>
       </Menu.Item>
         {/* <Menu.Item key="2">Url Previewer</Menu.Item>
@@ -53,7 +53,8 @@ export default function Home() {
         </Col>
 
         <Col xs={24} sm={24} md={12}>
-        <img src={BannerImage} style={{width: "100%", height: "auto"}} />
+        <img src={BannerImage} style={{width: "100%", height: "auto"}} 
+        alt="Url Previewer WhatsApp style"/>
         </Col>
       </Row>
 
