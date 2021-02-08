@@ -8,7 +8,7 @@ export default function useFetch({input}) {
 
     const instance = axios.create({
       baseURL: 'http://api.url-previewer.com',
-      timeout: 1000,
+      timeout: 50000,
       headers: {'Content-Type': 'application/json'}
     });
 
