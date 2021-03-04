@@ -7,7 +7,7 @@ export default function useFetch({input}) {
     const [dataFetched, setDataFetched] = useState({});
 
     const instance = axios.create({
-      baseURL: 'http://api.url-previewer.com',
+      baseURL: 'https://api.url-previewer.com',
       timeout: 50000,
       headers: {'Content-Type': 'application/json'}
     });
